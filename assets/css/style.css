@@ -41,10 +41,12 @@ li:hover .submenu{
     display: block;
 }
 .logo{
+    padding-top: 10px;
     margin-left: 30px;
     width: 40%;
 }
 .dropdown{
+    padding-top: 20px;
     width: 60%;
     margin: auto 10px;
 }
@@ -73,9 +75,11 @@ a{
 }
 .home h1{
     letter-spacing: 50px;
+    padding: 20px;
 }
 .home h4{
     letter-spacing: 15px;
+    padding: 20px;
 }
 .about{
     text-align: center;
@@ -87,17 +91,12 @@ a{
     text-transform: uppercase;
     font-family: raleway,sans-serif;
     letter-spacing: 10px;
-}
-.about h3{
-    text-transform: uppercase;
-    font-family: raleway,sans-serif;
-    letter-spacing: 10px;
-    padding: 20px;
+    padding: 30px;
 }
 .about-content{
     margin: 5px 80px;
     padding: 30px;
-    background-color: black;
+    background-color: #806573;
     color: white;
 }
 .see-more{
@@ -107,14 +106,14 @@ a{
     margin-bottom: 5px;
     border-radius: 20px;
     font-family: raleway, sans-serif;
-    background-color: black;
+    background-color: #806573;
     border: 1px solid white;
     color: white;
 }
 .see-more:hover{
     cursor: pointer;
     background-color: white;
-    border: 1px solid black;
+    border: 1px solid #806573;
     color: black;
 }
 .card-grid {
@@ -174,12 +173,11 @@ a{
     color: white;
 }
 .portfolio h2{
-    text-align: center;
     text-transform: uppercase;
     font-family: raleway,sans-serif;
     letter-spacing: 10px;
-    margin-top: 20px;
-    padding: 40px 10px 5px 10px;
+    padding: 30px;
+    text-align: center;
 }
 .portfolio p{
     padding: 0px 50px ;
@@ -199,7 +197,7 @@ a{
 	flex-wrap: nowrap;
 	justify-content: space-around;
 	align-items: center;
-    padding: 30px;
+    padding: 0px 30px;
 }
 .portfolio img{
     width: 22em;
@@ -211,7 +209,7 @@ a{
     max-width: 470px;
     padding: 30px;
     margin: 30px 30px 30px 10px;
-    background-color: #A08493;
+    background-color: #806573;
     border-radius: 20px;
     color: white;
     display: flex;
@@ -223,7 +221,7 @@ a{
     height: 40px;
     width: 130px;
     margin: 20px 10px 5px 10px;
-    background: #A08493;
+    background: #806573;
     color: white;
     border: 1px solid white;
     border-radius: 20px;
@@ -241,7 +239,7 @@ a{
 	flex-wrap: nowrap;
 	justify-content: space-around;
 	align-items: center;
-    padding: 30px;
+    padding: 0px 30px;
 }
 .sale-header{
     background: linear-gradient(rgba(158, 158, 158, 0.5), rgba(159, 159, 159, 0.5)), url(https://i.ebayimg.com/images/g/~PkAAOSwJaRjUBVM/s-l1600.png) ;
@@ -255,7 +253,9 @@ a{
 }
 .sale-header h2{
     text-transform: uppercase;
-    letter-spacing: 15px;
+    font-family: raleway,sans-serif;
+    letter-spacing: 10px;
+    padding: 30px;
 }
 .explore{
     width: 130px;
@@ -338,11 +338,12 @@ a{
 }
 .contact{
     height: 70px;
+    padding-top: 20px;
 }
 .contact p, span{
     display: flex;
-    justify-content: space-around;
     font-size: 24px;
+    justify-content: space-around;
 }
 
 @media screen and (max-width:768px){
@@ -361,14 +362,16 @@ a{
     }
     .logo{
         width: 70%;
-        margin-top: 15px;
         margin-left: 10px;
+        padding-top: 15px;
     }
     .dropdown {
         position: relative;
         display: inline-block;
-        margin-right: auto;
-        width: 20%
+        margin: auto;
+        width: 20%;
+        padding-left: 45px;
+        padding-bottom: 10px;
       }
     .content {
   display: none;
@@ -429,7 +432,7 @@ a{
     .about-content{
         margin: 5px 20px;
         padding: 30px;
-        background-color: black;
+        background-color: #806573;
         color: white;
     }
     .card-grid {
@@ -473,7 +476,7 @@ a{
     }
     .portfolio-txt{
         width: 22em;
-        background-color: #A08493;
+        background-color: #806573;
         border-radius: 0px;
         color: white;
         margin:0px;
@@ -526,6 +529,9 @@ a{
         margin-bottom: 40px;
         top: 0%;
         left: 30%;
+    }
+    .contact{
+        padding: 5px;
     }
     .contact p, span{
         font-size: 18px;
