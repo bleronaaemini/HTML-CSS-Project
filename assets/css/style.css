@@ -63,11 +63,11 @@ a{
     background: linear-gradient(rgba(78, 77, 77, 0.5), rgba(56, 56, 56, 0.5)), url(https://swall.teahub.io/photos/small/325-3254570_hermes-brand-perfume-wallpaper2014-perfume.jpg) bottom center;
     background-size: cover;
     background-attachment: fixed;
-    height: 400px;
+    height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items:center;
     text-transform: uppercase;
     font-family: raleway,sans-serif;
     color: white;
@@ -144,6 +144,9 @@ a{
     text-align: left;
     margin: auto;
 }
+.card-style:hover{
+    transform: scale(1.1);
+}
 .image-style {
     height: 180px;
     width: 300px;
@@ -171,52 +174,19 @@ a{
     border: 2px solid #9b9e9a;
     color: white;
 }
-.portfolio{
-    text-align: center;
-}
-.portfolio h2 {
-    text-transform: uppercase;
-    font-family: raleway,sans-serif;
-    letter-spacing: 10px;
-    margin-top: 40px;
-    padding: 15px;
-}
-.portfolio p{
-    margin: 40px 80px;
-}
-.grid-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    width: 100%;
-    margin: auto;
-}
-.grid-container img{
-    width: 300px;
-    height: 400px;
-}
-.grid-container figcaption{
-    max-width: 380px;
-}
-.grid-container > div{
-    margin: 20px;
-    cursor: pointer;
-}
-.grid-container img:hover{
-    cursor: pointer;
-    opacity: .9;
-    transform: scale(1.01);
-}
-.sale h2{
+.portfolio h2{
     text-align: center;
     text-transform: uppercase;
     font-family: raleway,sans-serif;
     letter-spacing: 10px;
     margin-top: 20px;
-    padding: 10px;
+    padding: 40px 10px 5px 10px;
 }
-.sale h4{
+.portfolio p{
+    padding: 0px 50px ;
+    text-align: center;
+}
+.portfolio h4{
     text-align: center;
     text-transform: uppercase;
     font-family: raleway,sans-serif;
@@ -224,7 +194,7 @@ a{
     margin-top: 10px;
     padding: 10px;
 }
-.sale-content1{
+.portfolio-content1{
     display: flex;
     flex-direction: row;
 	flex-wrap: nowrap;
@@ -232,13 +202,13 @@ a{
 	align-items: center;
     padding: 30px;
 }
-.sale img{
+.portfolio img{
     width: 22em;
     float: left;
     margin: 30px 30px 30px 10px;
     max-height: 400px;
 }
-.sale-txt{
+.portfolio-txt{
     max-width: 470px;
     padding: 30px;
     margin: 30px 30px 30px 10px;
@@ -250,7 +220,7 @@ a{
 	justify-content: center;
 	align-items: center;
 }
-.sale-btn{
+.portfolio-btn{
     height: 40px;
     width: 130px;
     margin: 20px 10px 5px 10px;
@@ -259,20 +229,81 @@ a{
     border: 1px solid white;
     border-radius: 20px;
 }
-.sale-btn:hover{
+.portfolio-btn:hover{
     cursor: pointer;
     background-color: white;
     border: 1px solid white;
     border-radius: 20px;
     color: #806573;
 }
-.sale-content2{
+.portfolio-content2{
     display: flex;
     flex-direction: row-reverse;
 	flex-wrap: nowrap;
 	justify-content: space-around;
 	align-items: center;
     padding: 30px;
+}
+.sale-header{
+    background: linear-gradient(rgba(158, 158, 158, 0.5), rgba(159, 159, 159, 0.5)), url(https://i.ebayimg.com/images/g/~PkAAOSwJaRjUBVM/s-l1600.png) ;
+    height: 500px;
+    display: grid;
+    justify-content: center;
+    align-items: end;
+    font-family: raleway,sans-serif;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.sale-header h2{
+    text-transform: uppercase;
+    letter-spacing: 15px;
+}
+.explore{
+    width: 130px;
+    height: 40px;
+    margin: 20px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    font-family: raleway, sans-serif;
+    background-color: transparent;
+    border: 1px solid black;
+    color: black;
+    position: relative;
+    top: 0%;
+    left: 40%;
+}
+.explore:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+.sale-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    max-height: 480px;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.details{
+    padding-left: 50px;
+}
+.sale-content img{
+    width: 300px;
+    height: 450px;
+    opacity: 0.7;
+}
+.sale-content h3{
+    position: relative;
+    top: -50%;
+    left: 20%;
+    color: white;
+    text-transform: uppercase;
+    font-family: raleway, sans-serif;
+}
+.details:hover{
+    cursor: pointer;
+    transform: scale(1.1);
 }
 .card-style-1 {
     background-color: white;
@@ -283,6 +314,9 @@ a{
     color: black;
     text-align: left;
     margin: auto;
+}
+.card-style-1:hover{
+    transform: scale(1.1);
 }
 .image-style-1 {
     height: 300px;
@@ -307,6 +341,9 @@ a{
 .footer-section{
     margin-top: 20px;
 }
+.contact{
+    height: 70px;
+}
 .contact p, span{
     display: flex;
     justify-content: space-around;
@@ -317,7 +354,7 @@ a{
     *{
         max-width: 100%;
         margin: 0;
-        padding: 0%;
+        padding: 0;
     }
     .material-symbols-outlined{
         margin-left: 10px;
@@ -328,14 +365,15 @@ a{
         flex-direction: column;
     }
     .logo{
-        width: 80%;
-        margin: 15px 20px;
+        width: 70%;
+        margin-top: 15px;
+        margin-left: 10px;
     }
     .dropdown {
         position: relative;
         display: inline-block;
-        margin-right: 0%;
-        width: 20%;
+        margin-right: auto;
+        width: 20%
       }
     .content {
   display: none;
@@ -347,10 +385,10 @@ a{
   left: -100px;
 }
 .dropbtn{
-    margin: 15px 20px;
    display: inline-block;
    background-color: white;
    border: none;
+   margin: auto;
 }
 .content a {
     color: black;
@@ -369,6 +407,7 @@ a{
     .home{
         background: linear-gradient(rgba(78, 77, 77, 0.5), rgba(56, 56, 56, 0.5)), url(https://swall.teahub.io/photos/small/325-3254570_hermes-brand-perfume-wallpaper2014-perfume.jpg) bottom center;
         background-size: cover;
+        height: 400px;
         display: flex;
         align-items: center;
     }
@@ -377,6 +416,9 @@ a{
     }
     .home h4{
         letter-spacing: 5px;
+        text-align: center;
+        padding: 10px 20px;
+        line-height: 30px;
     }
     .about{
         text-align: center;
@@ -390,11 +432,10 @@ a{
         padding: 20px;
     }
     .about-content{
-        margin: 5px 60px;
+        margin: 5px 20px;
         padding: 30px;
         background-color: black;
         color: white;
-        width: 70%;
     }
     .card-grid {
         display: block;
@@ -406,44 +447,88 @@ a{
     }
     .card-style{
         margin-bottom: 30px;
+        width: 250px;
+    }
+    .card-style:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr ;
+        justify-content: space-evenly;
+        width: 100%;
+        margin: auto;
     }
     .grid-container img{
         height: 350px;
     }
-    .grid-container figcaption{
-        max-width: 300px;
-    }
-    .sale-content1{
+    .portfolio-content1{
         display: block;
         margin: auto;
         padding: 30px;
         float: none;
     }
-    .sale img{
-        width: 300px;
-        max-height: 400px;
-        margin-bottom:0px;
-        margin-left: 30px;
+    .portfolio img{
+        float: left;
         border-top-right-radius:8px ;
         border-top-left-radius:8px ;
+        margin: 0%;
     }
-    .sale-txt{
+    .portfolio-txt{
         background-color: #A08493;
         border-radius: 0px;
         color: white;
         margin:0px;
-        width: 300px;
         border-bottom-right-radius:8px ;
         border-bottom-left-radius:8px ;
-        margin: 30px 30px 30px 30px;
     }
-    .sale-content2{
+    .portfolio-content2{
         display: block;
         margin: auto;
         padding: 30px;
     }
     .card-style-1{
-        margin-bottom: 20px;
+        margin-bottom: 30px;
+        width: 250px;
+    }
+    .sale-header{
+        background-size: cover;
+        max-width: 100%;
+        height: 400px;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+    .sale-header h2{
+        text-align: center;
+        width: 400px;
+        padding: 50px;
+        line-height: 40px;
+    }
+    .sale-content{
+        display: block;
+        max-width: 300px;
+        margin-top: 40px auto;
+        padding: 0%;
+        max-height: fit-content;
+    }
+    .details{
+        padding: 20px;
+    }
+    .sale-content h3{
+        position: relative;
+        left: auto;
+        color: black;
+        text-transform: uppercase;
+        font-family: raleway, sans-serif;
+    }
+    .explore{
+        height: 40px;
+        margin: 20px;
+        margin-bottom: 40px;
+        top: 0%;
+        left: 30%;
     }
     .contact p, span{
         font-size: 18px;
