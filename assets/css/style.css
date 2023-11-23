@@ -1,8 +1,7 @@
 *{
     box-sizing: border-box;
-}
-body{
-    margin: 0%;
+    margin: 0;
+    padding: 0;
 }
 header{
     font-family: raleway,sans-serif;
@@ -278,15 +277,10 @@ a{
     color: white;
 }
 .sale-content{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 20px;
+    display: flex;
     max-height: 480px;
     justify-content: space-around;
     margin-top: 50px;
-}
-.details{
-    padding-left: 50px;
 }
 .sale-content img{
     width: 300px;
@@ -300,6 +294,7 @@ a{
     color: white;
     text-transform: uppercase;
     font-family: raleway, sans-serif;
+    width: fit-content;
 }
 .details:hover{
     cursor: pointer;
@@ -474,8 +469,10 @@ a{
         border-top-right-radius:8px ;
         border-top-left-radius:8px ;
         margin: 0%;
+        width: 22em;
     }
     .portfolio-txt{
+        width: 22em;
         background-color: #A08493;
         border-radius: 0px;
         color: white;
@@ -509,7 +506,7 @@ a{
     .sale-content{
         display: block;
         max-width: 300px;
-        margin-top: 40px auto;
+        margin:auto;
         padding: 0%;
         max-height: fit-content;
     }
